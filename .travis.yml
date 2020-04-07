@@ -10,7 +10,6 @@ addons:
     sources:
       - google-chrome
     packages:
-      - libnss3
       - google-chrome-stable
       - docker-ce
 
