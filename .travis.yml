@@ -8,9 +8,9 @@ services:
 addons:
   apt:
     sources:
-      - chrome
+      - google-chrome
     packages:
-      - chrome-stable
+      - google-chrome-stable
       - docker-ce
 
 # Install any dependencies, update Docker Compose to 1.23.2 so we can use Dockerfile outside build context
