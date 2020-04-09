@@ -31,7 +31,7 @@ module.exports = function (config) {
     customLaunchers: {
       Chrome: {
         base: "Chrome",
-        flags: ["--no-sandbox", "--disable-setuid-sandbox"],
+        flags: ["--headless", "--no-sandbox", "--disable-setuid-sandbox"],
       },
     },
     singleRun: false,
