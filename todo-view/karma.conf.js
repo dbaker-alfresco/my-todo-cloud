@@ -27,14 +27,13 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ["ChromeHeadlessNoSandbox"],
+    browsers: ["Chrome"],
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
-        base: "ChromeHeadless",
+        base: "Chrome",
         flags: ["--no-sandbox", "--disable-setuid-sandbox"],
       },
     },
-    CHROME_BIN=/usr/bin/chromium,
     singleRun: false,
   });
 };
