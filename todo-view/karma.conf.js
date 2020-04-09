@@ -34,7 +34,7 @@ module.exports = function (config) {
         flags: ["--no-sandbox", "--disable-setuid-sandbox"],
       },
     },
-    export CHROME_BIN=/usr/bin/chromium,
+    CHROME_BIN=/usr/bin/chromium,
     singleRun: false,
   });
 };
