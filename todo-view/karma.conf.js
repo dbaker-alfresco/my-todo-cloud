@@ -27,7 +27,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ["/Applications/Google Chrome.app"],
+    browsers: ["/usr/bin/chromium-browser"],
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: "Chrome",
