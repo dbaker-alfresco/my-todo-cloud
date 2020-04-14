@@ -30,7 +30,7 @@ module.exports = function (config) {
     browsers: ["/usr/bin/chromium-browser"],
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
-        base: "Chrome",
+        base: "chromium-browser",
         flags: ["--no-sandbox", "--disable-setuid-sandbox"],
       },
     },
