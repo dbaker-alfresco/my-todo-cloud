@@ -12,7 +12,6 @@ module.exports = function (config) {
       require("karma-coverage-istanbul-reporter"),
       require("@angular/cli/plugins/karma"),
     ],
-    export CHROME_BIN=/usr/bin/chromium-browser,
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
