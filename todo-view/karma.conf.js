@@ -12,6 +12,7 @@ module.exports = function (config) {
       require("karma-coverage-istanbul-reporter"),
       require("@angular/cli/plugins/karma"),
     ],
+    export CHROME_BIN=/usr/bin/chromium-browser,
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
@@ -27,8 +28,8 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    // browsers: ["Chrome"],
-    browsers: ["/Applications/Google Chrome.app"],
+    browsers: ["Chrome"],
+    // browsers: ["/Applications/Google Chrome.app"],
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: "Chrome",
