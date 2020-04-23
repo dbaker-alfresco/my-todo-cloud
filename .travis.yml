@@ -29,9 +29,9 @@ before_install:
 #   - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t dbaker7532/todo-cache-service-test
 
 # Run some tests
-script:
-  - docker run dbaker7532/todo-view-test npm test -- --watch=false --no-progress --browsers=Chrome
-  - docker run dbaker7532/todo-cache-service-test npm test
+# script:
+#   - docker run dbaker7532/todo-view-test npm test -- --watch=false --no-progress --browsers=Chrome
+#   - docker run dbaker7532/todo-cache-service-test npm test
 
 after_success:
   # Build Production Images for deployment
