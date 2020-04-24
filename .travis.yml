@@ -7,7 +7,7 @@ services:
 # Get Google Chrome headless browser for Angular tests
 # Install latest Docker CE so we can use Dockerfile outside build context
 addons:
-  chrome: stable
+  # chrome: stable
   apt:
     packages:
       - docker-ce
@@ -22,17 +22,17 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - docker-compose --version
 
-#install:
+  #install:
 
-# Build development images for test
-# before_script:
-#   - docker build ./todo-view -f ./todo-view/Dockerfile.dev -t dbaker7532/todo-view-test
-#   - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t dbaker7532/todo-cache-service-test
+  # Build development images for test
+  # before_script:
+  - docker build ./todo-view -f ./todo-view/Dockerfile.dev -t dbaker7532/todo-view-test
+  - docker build ./todo-cache-service -f Dockerfile.nodejs.dev -t dbaker7532/todo-cache-service-test
 
-# Run some tests
-# script:
-#   - docker run dbaker7532/todo-view-test npm test -- --watch=false --no-progress --browsers=Chrome
-#   - docker run dbaker7532/todo-cache-service-test npm test
+  # Run some tests
+  # script:
+  - docker run dbaker7532/todo-view-test npm test -- --watch=false --no-progress --browsers=Chrome
+  - docker run dbaker7532/todo-cache-service-test npm test
 
 after_success:
   # Build Production Images for deployment
