@@ -31,7 +31,7 @@ before_install:
 
   # Run some tests
   # script:
-  - docker run dbaker7532/todo-view-test npm test -- --watch=false --no-progress --browsers=Chrome
+  - docker run dbaker7532/todo-view-test npm test -- --watch=false --no-progress --no-sandbox --browsers=Chrome
   - docker run dbaker7532/todo-cache-service-test npm test
 
 after_success:
