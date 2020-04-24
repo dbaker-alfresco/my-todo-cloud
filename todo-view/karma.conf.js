@@ -27,11 +27,11 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ["Chrome"],
+    browsers: ["ChromeHeadlessNoSandbox"],
     // browsers: ["/Applications/Google Chrome.app"],
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
-        base: "Chrome",
+        base: "ChromeHeadless",
         flags: ["--headless", "--no-sandbox", "--disable-setuid-sandbox"],
       },
     },
