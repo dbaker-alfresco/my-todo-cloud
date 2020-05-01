@@ -47,7 +47,7 @@ deploy:
   region: eu-west-1
   app: Todo Application DBaker
   env: TodoApplicationDbaker-env
-  bucket_name: elasticbeanstalk-eu-west-1-047614345379
+  bucket_name: elasticbeanstalk-dbaker
   bucket_path: todo-app
   on:
     branch: master
